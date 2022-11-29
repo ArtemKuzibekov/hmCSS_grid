@@ -1,0 +1,47 @@
+.{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    --colorText:rgb(179, 172, 167)
+    /* переменная */
+}
+.cont{
+    display: grid;
+    height: 100vh;
+    /* width: 960px; */
+    grid-template-rows: 100px 1fr 100px;
+    /* margin: 0 auto; */
+}
+
+.header,.footer{
+    background: gainsboro;
+
+}
+.header{
+    display:grid;
+    font-size: 2.5rem;
+    align-items: center;
+    justify-items: center;
+    letter-spacing: 5px;
+    /*  Между каждым эл 5 пх отступ */
+    /* font-family: ; ШРИФТЫ */ 
+    color:var(--colorText)
+}
+.footer{
+    display: grid;
+    align-content: center;
+    justify-items: center
+
+}
+.footer a{
+    /* Обращение к чему-то пишется внутри, в данный момент
+    обращение к ссылкам в футере */
+     font-weight: bold;
+     color: var(--colorText);
+     text-decoration: none;
+     /* Подчеркивание текста */
+     /* font-family: fantasy; шрифт */
+
+}
